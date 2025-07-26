@@ -5,7 +5,7 @@
   --cor-texto: #a1a1a1; /* cor do texto */
   --cor-header: #282828; /* cor do header */
 
-  --cor-icone: #fff ; /* cor dos ícones */
+  --cor-icone: #fff; /* cor dos ícones */
   --cor-link: #ffffff; /* cor dos links */
   --cor-hover: #4d4d4d; /* cor do hover dos links */
 }
@@ -18,6 +18,11 @@
   --cor-icone: #000; /* cor dos ícones */
   --cor-link: #000000; /* cor dos links */
   --cor-hover: #e2e2e2; /* cor do hover dos links */
+}
+
+html[data-theme="light"] .logo {
+  filter: invert(1); /* inverte as cores da logo para o tema claro */
+ 
 }
 /* Definir cores tema light */
 
@@ -76,7 +81,11 @@ header {
   text-transform: uppercase; /* transforma o texto em maiúsculas */
 }
 
-#toggleTheme {
+.logo {
+  width: 3.5rem;   /* largura menor */
+  height: 2rem;  /* altura menor */
+  
+}#toggleTheme {
   cursor: pointer;
   color: var(--cor-icone);
   font-size: 1.5rem; /* tamanho do ícone */
